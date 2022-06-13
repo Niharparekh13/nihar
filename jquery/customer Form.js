@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  $('#submit').click(function(){
+    event.preventDefault();
     $("#firstname").blur(function(){
         let firstname = $('#firstname').val();
         let firstname_pattern = "[a-zA-Z]{2,30}$";
@@ -39,7 +41,7 @@ $("#city").blur(function(){
   text = 'City is required';
   $('#OP4').text(text); 
   }
-});
+//});
 $("#state").blur(function(){
   let state = $('#state').val();
   let state_pattern = "[a-zA-Z]{2,30}$";
@@ -100,7 +102,7 @@ $("#suggestion").blur(function(){
   $('#OP10').text(text); 
   }
 });
-$('#submit').click(function(){
+$('#submit').click(function(event){
   event.preventDefault();
 
   let gender = $('input[name="gender"]');
@@ -119,4 +121,7 @@ $('#submit').click(function(){
   }
 
 });
+});
+}
+)
 });
