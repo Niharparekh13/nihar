@@ -1,0 +1,70 @@
+input.checkbox_class{
+    width: 15px;
+    height: 15px;
+}
+.asterick::after{
+    content: "*";
+    color: red
+}
+
+body{
+    border : 150px solid aliceblue;
+    padding: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: solid white;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+table, th, td {
+
+    border: 1px solid black;
+    
+    border-collapse: collapse;
+    
+    }
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: green;
+}
+#OP1{
+    color: red;
+}
+#OP2{
+    color: red;
+}
+#OP3{
+    color: red;
+}
+#OP4{
+    color: red;
+}
+#OP5{
+    color: red;
+}
+#OP6{
+    color: red;
+}
+#OP7{
+    color: red;
+}
+#OP8{
+    color: red;
+}
+#OP9{
+    color: red;
+}
+#OP10{
+    color: red;
+}
+#OP11{
+    color: red;
+}

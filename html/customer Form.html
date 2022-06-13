@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="En-US">
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/customer Form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../jquery/customer Form.js"></script>
+  </head>
+
+  <body class="body_class">
+    <div>
+      <h1>Custmoer Details</h1>
+      <hr />
+
+      <p class="asterick">Full Name</p>
+      <form action="">
+        <div class="row">
+          <div class="col">
+      <div style="float: left; padding-right: 15px">
+          <input type="text" name="fname" size="20%" id="firstname" />
+          <p id="OP1"></p>
+          <label for="fname"></label>
+          <p style="font-size: 15">First Name</p>
+      </div>
+          </div>
+        
+      
+      <div class="col">
+      <div style="float: left; padding-left: 2px">
+        <input type="text" name="lname" size="20%" id="lastname" />
+        <p id="OP2"></p>
+        <label for="lname"></label>
+        <p style="font-size: 15">Last Name</p>
+      </div>
+      </div>
+
+      <div style="clear: both"></div>
+
+      <p class="asterick">Address</p>
+
+      <div>
+        <input type="text" name="address" size="50%" id="staddress"/>
+        <p id="OP3"></p>
+        <label for="address"></label>
+        <p style="font-size: 16">Street Address</p>
+      </div>
+
+      <div>
+        <input type="text" name="st-address" size="50%" />
+        <label for="st-address"></label>
+        <p style="font-size: 16">Street Address Line 2</p>
+      </div>
+
+      <div style="float: left; padding-right: 15px">
+        <input type="text" name="city" id="city"/>
+        <p id="OP4"></p>
+        <label for="city"></label>
+        <p style="font-size: 15">City</p>
+        <br />
+      </div>
+
+      <div style="float: left; padding-left: 2px">
+        <input type="text" name="state" id="state"/>
+        <p id="OP5"></p>
+        <label for="state"></label>
+        <p style="font-size: 15">State/Province</p>
+        <br />
+      </div>
+
+      <div style="clear: both"></div>
+
+      <div>
+        <input type="text" name="zipcode" size="50%" id="zipcode" />
+        <p id="OP6"></p>
+        <label for="zipcode"></label>
+        <p style="font-size: 16">Postal/zipcode</p>
+      </div>
+      <br />
+      <p style="font-size: 16" class="asterick">Phone-Number</p>
+
+      <div>
+        <input
+          type="tel"
+          name="phonenumber"
+          size="50%"
+          placeholder="(000) 0000-000"
+          id="phone"
+        />
+        <p id="OP7"></p>
+        <label for="phonenumber"></label>
+        <p id="OP7"></p>
+      </div>
+      <br /><br />
+      <p style="font-size: 16">E-mail</p>
+
+      <div>
+        <input
+          type="email"
+          name="mail"
+          size="50%"
+          placeholder="ex :email@yahoo.com"
+          id="email"
+        />
+        <label for="mail"></label>
+        <p id="OP8"></p><br><br><br>
+      </div>
+
+      <div>
+        <label for="fouundus" style="padding-top: 15px" class="asterick"
+          >How did you hear about us?</label
+        ><br />
+        <br />
+        <select name="foundus" id="foundus">
+          <option value="magazine">Magazine</option>
+          <option value="newspaper">Newspaper</option>
+          <option value="social">Social-media</option>
+          <option value="friend">Friend</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br /><br />
+
+      <div>
+        <p style="font-size: 16">Feedback about us:</p>
+        <textarea id="feedback" name="feedback" rows="7" cols="60"></textarea>
+        <label for="feedback"></label>
+        <p id="OP9"></p>
+      </div>
+
+      <div>
+        <p style="font-size: 16">Suggestion if for any further imporovement:</p>
+        <textarea
+          id="suggestion"
+          name="suggestion"
+          rows="7"
+          cols="60"
+        ></textarea>
+        <label for="suggestion"></label>
+        <p id="OP10"></p>
+      </div><br><br>
+      <div>
+        <label style="font-size: 16; float: inline-start"
+          >Will you be willing to recommand us?
+          <input
+            type="checkbox"
+            class="checkbox_class"
+            name="recommand"
+            style="float: none"
+            id="checkbox"
+          />
+        </label>
+      </div>
+      <br />
+
+      <div style="clear: both"></div>
+      <br />
+
+      <div id="gender"></div>
+        <label style="font-size: 16; float: inline-start">Gender :</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" />
+        <label for="other">Other</label>
+        <p id="OP11"></p>
+      </div>
+      <br />
+
+      <p><b>Plase give reference of any two people whom you feel</b></p>
+      <br />
+
+      <table>
+        <form>
+          <thead>
+            <tr>
+              <td
+                style="border-top-color: white; border-left-color: white"
+              ></td>
+              <th style="background-color: silver">Full Name</th>
+              <th style="background-color: silver">Address</th>
+              <th style="background-color: silver">Contact Number</th>
+            </tr>
+          </thead>
+          <tr>
+            <td style="background-color: silver; size: 10%">1</td>
+            <td><input class="rinput" type="text" /></td>
+            <td><input class="rinput" type="text" /></td>
+            <td><input class="rinput" type="text" /></td>
+          </tr>
+          <tr>
+            <td style="background-color: silver; size: 10%">2</td>
+            <td><input class="rinput" type="text" /></td>
+            <td><input class="rinput" type="text" /></td>
+            <td><input class="rinput" type="text" /></td>
+          </tr>
+        </form>
+      </table>
+      <br />
+      <button class="button submit" id="submit">Submit</button>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
